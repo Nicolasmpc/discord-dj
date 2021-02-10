@@ -1,1 +1,1 @@
-worker: java -cp target/dependency/* -jar target/*.jar
+worker: java -cp target/classes:target/dependency/* com.nicolas.Bot
