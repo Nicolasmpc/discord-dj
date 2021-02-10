@@ -1,1 +1,1 @@
-worker: mvn exec:java -Dexec.mainClass=com.nicolas.Bot
+worker: sh target/bin/webapp
