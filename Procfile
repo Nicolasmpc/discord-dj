@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -cp target/classes:target/dependency/* com.nicolas.Bot
+worker: java -jar target/*.jar
