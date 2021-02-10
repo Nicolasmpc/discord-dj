@@ -22,26 +22,32 @@
 			</resource>
 		</resources>
 
-			<plugins>
-				<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
-					<version>3.8.1</version> <configuration> <source>15</source> <target>15</target> 
-					</configuration> </plugin> -->
+		<plugins>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+				<version>3.8.1</version> <configuration> <source>15</source> <target>15</target> 
+				</configuration> </plugin> -->
 
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.0.1</version>
-					<executions>
-						<execution>
-							<id>copy-dependencies</id>
-							<phase>package</phase>
-							<goals>
-								<goal>copy-dependencies</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
+				<version>3.0.1</version> <executions> <execution> <id>copy-dependencies</id> 
+				<phase>package</phase> <goals> <goal>copy-dependencies</goal> </goals> </execution> 
+				</executions> </plugin> -->
+
+			<plugin>
+				<!-- Build an executable JAR -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>com.nicolas.Bot</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 
