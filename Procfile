@@ -1,1 +1,1 @@
-worker: sh target/bin/bot
+web: java -cp target/classes;target/dependency/* com.nicolas.Bot
