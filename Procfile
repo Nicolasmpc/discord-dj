@@ -1,1 +1,1 @@
-worker: sh target/bin/bot
+worker: mvn exec:java -Dexec.mainClass=com.nicolas.Bot
