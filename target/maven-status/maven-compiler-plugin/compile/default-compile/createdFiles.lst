@@ -1,0 +1,16 @@
+com\nicolas\lavaplayer\TrackScheduler.class
+com\nicolas\comando\comandos\JoinCommand.class
+com\nicolas\lavaplayer\GuildMusicManager.class
+com\nicolas\lavaplayer\AudioPlayerSendHandler.class
+com\nicolas\Bot.class
+com\nicolas\comando\comandos\TesteCommand.class
+com\nicolas\comando\comandos\StopCommand.class
+com\nicolas\Listener.class
+com\nicolas\comando\comandos\SkipCommand.class
+com\nicolas\Config.class
+com\nicolas\lavaplayer\PlayerManager.class
+com\nicolas\comando\CommandContext.class
+com\nicolas\comando\ICommand.class
+com\nicolas\CommandManager.class
+com\nicolas\lavaplayer\PlayerManager$1.class
+com\nicolas\comando\comandos\PlayCommand.class
