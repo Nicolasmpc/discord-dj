@@ -24,8 +24,9 @@ public class Listener extends ListenerAdapter {
 	public void onGuildMessageReceived(@NotNull GuildMessageReceivedEvent event) {
 		
 		User user = event.getAuthor();
+		User selfUser = event.getJDA().getSelfUser();
 		
-		if (user.isBot() || event.isWebhookMessage()) {
+		if (!(user.getId().equals(selfUser.getId())) && (user.isBot() || event.isWebhookMessage())) {
 			return;
 		}
 		

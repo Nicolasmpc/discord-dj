@@ -27,7 +27,6 @@ public class Bot {
 							))
 				.build();
 		jda.addEventListener(new Listener());
-		
 	}
 
 	public static void main(String[] args) throws LoginException {

@@ -9,6 +9,7 @@ import javax.annotation.Nullable;
 
 import com.nicolas.comando.CommandContext;
 import com.nicolas.comando.ICommand;
+import com.nicolas.comando.comandos.DisconnectCommand;
 import com.nicolas.comando.comandos.JoinCommand;
 import com.nicolas.comando.comandos.PlayCommand;
 import com.nicolas.comando.comandos.SkipCommand;
@@ -26,13 +27,14 @@ public class CommandManager {
 		addComando(new PlayCommand());
 		addComando(new StopCommand());
 		addComando(new SkipCommand());
+		addComando(new DisconnectCommand());
 	}
 
 	private void addComando(ICommand cmd) {
 		boolean nameFound = this.comandos.stream().anyMatch((it) -> it.getName().equalsIgnoreCase(cmd.getName()));
 		
 		if (nameFound) {
-			throw new IllegalArgumentException("Comando com esse nome já está presente");
+			throw new IllegalArgumentException("Comando com esse nome ja esta presente");
 		}
 		
 		comandos.add(cmd);
