@@ -55,7 +55,7 @@ public class PlayerManager {
 
 				LOGGER.info("Adicionando a fila | url: " + track.getInfo().uri + "| titulo: " + track.getInfo().title);
 
-				channel.sendMessage("Adicionando à fila: `").append(track.getInfo().title + "`").queue();
+				channel.sendMessage("Adicionando a fila: `").append(track.getInfo().title + "`").queue();
 			}
 
 			@Override
@@ -66,8 +66,8 @@ public class PlayerManager {
 
 					LOGGER.info("Adicionando a playlist | qtd: " + tracks.size() + "| titulo: " + playlist.getName());
 
-					channel.sendMessage("Adicionando à fila: `").append(String.valueOf(tracks.size()) + "`")
-							.append("músicas da playlist `" + playlist.getName() + "`").queue();
+					channel.sendMessage("Adicionando a fila: `").append(String.valueOf(tracks.size()) + "`")
+							.append("musicas da playlist `" + playlist.getName() + "`").queue();
 
 					for (final AudioTrack track : tracks) {
 						musicManager.scheduler.queue(track);
@@ -78,7 +78,7 @@ public class PlayerManager {
 					
 					LOGGER.info("Adicionando a fila | url: " + track.getInfo().uri + "| titulo: " + track.getInfo().title);
 					
-					channel.sendMessage("Adicionando à fila: `").append(track.getInfo().title + "`").queue();
+					channel.sendMessage("Adicionando a fila: `").append(track.getInfo().title + "`").queue();
 				}
 
 			}
